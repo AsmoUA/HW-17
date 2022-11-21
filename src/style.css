@@ -1,0 +1,266 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Muller_regular";
+    font-style: normal;
+    src: url("./font\ Muller/2DF5B4_F_0.woff2") format("woff2"), url("./font\ Muller/2DF5B4_F_0.woff") format("woff")
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Muller_bold";
+    font-style: normal;
+    src: url("./font\ Muller/2DF5B4_2_0.woff2") format("woff2"), url("./font\ Muller/2DF5B4_2_0.woff") format("woff")
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Muller_regular";
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.first-screen {
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    position: relative;
+}
+
+.body__panel {
+    width: 1150px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+.header-logo {
+    display: grid;
+    grid-template: 50px / 56px 2fr;
+    color: #46B1DE;
+    height: 50px;
+}
+
+.menu__block {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 50px;
+    text-align: center;
+}
+
+.block__title {
+    white-space: pre-line;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+h2.block__title span {
+    color: #46B1DE;
+    font-family: 'Russo One', sans-serif;
+}
+
+.butt__block {
+    margin-top: 5%;
+}
+
+.butt__panel {
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    block-size: 60px;
+    inline-size: 160px;
+    padding: 15px 0;
+}
+
+#butt_call {
+    background-color: #46B1DE;
+    color: white;
+    margin-left: 10px;
+}
+
+#butt_serv {
+    background-color: #fff;
+    color: #46B1DE;
+    margin: 0 125px;
+}
+
+#butt_call:hover, #butt_serv:hover {
+    background-color: rgb(126, 211, 133);
+}
+
+.footer__card {
+    top: 780px;
+    position: absolute;
+    margin: 0 100px;
+    display: grid;
+    grid-template: 80px / repeat(3, 250px);
+    gap: 100px;
+}
+
+.footer__card__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 gray;
+    background-color: #fff;
+
+}
+
+.numb__img {
+    font-size: 52px;
+    color: #46B1DE;
+    margin: 4px;
+    font-family: "Muller_bold";
+}
+
+.lady__smile {
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+}
+
+.block__benefits {
+    margin-top: 100px;
+}
+
+.block__benefits p {
+    font-size: 20px; 
+    width: 700px; 
+    margin: 0 auto 32px auto;
+    text-align: center;
+}
+
+.benf__dscr {
+    background-color: #83c3df;
+    border-radius: 8px;
+    width: 950px;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benf__dscr__numb {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 290px;
+    height: 180px;
+    margin: 6px 12px;
+    padding: 16px;
+}
+
+.benf__dscr__numb__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+div.benf__dscr__numb__title>span {
+    font-size: 48px;
+    color: #46B1DE;
+    font-family: "Muller_bold";
+}
+
+div.benf__dscr__numb__title>span+span {
+    font-size: medium;
+    margin: 0 8px;
+    font-family: "Muller_bold";
+}
+
+footer {
+    margin-top: 100px;
+    background: linear-gradient(90deg, #c2dcff, #0f3074);
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 40%;
+    padding: 16px;
+}
+
+.first__block__footer {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+    color: #0f2d4a;
+}
+
+#footer__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer__menu__wh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.first__link__f {
+    color: #0f2d4a;
+}
+
+.second__block__footer {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.second__link__f {
+    color: #fff;
+}
+
+.footer__img__contact {
+    height: 16px;
+    margin: 0 4px;
+}
+
+div.second__block__footer>p {
+    margin: 0;
+}
+
+#last__link__footer {
+    flex-grow: 1;
+}
+
+#copyrigt__item {
+    font-size: x-small;
+    align-self: center;
+}
